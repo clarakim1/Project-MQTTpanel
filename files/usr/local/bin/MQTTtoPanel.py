@@ -15,8 +15,8 @@ from rgbmatrix import RGBMatrix, RGBMatrixOptions
 options = RGBMatrixOptions()
 options.hardware_mapping = "adafruit-hat"
 options.led_rgb_sequence = "RBG"
-options.rows = 64
-options.cols = 64
+options.rows = 32
+options.cols = 32
 options.chain_length = 1
 options.disable_hardware_pulsing = True
 matrix = RGBMatrix(options = options)
@@ -24,7 +24,7 @@ matrix = RGBMatrix(options = options)
 #canvas = matrix
 #canvas2 = matrix.CreateFrameCanvas() 
 
-image = Image.new("RGB", (64, 64))  # Can be larger than matrix if wanted!!
+image = Image.new("RGB", (32, 32))  # Can be larger than matrix if wanted!!
 draw = ImageDraw.Draw(image)  # Declare Draw instance before prims 
 
 background = (0, 0, 0)
